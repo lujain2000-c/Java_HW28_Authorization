@@ -16,7 +16,7 @@ public class AuthService {
 
         String hash = new BCryptPasswordEncoder().encode(customer.getPassword());
         customer.setPassword(hash);
-        customer.setRole("customer");
+        customer.setRole("CUSTOMER");
         authRepository.save(customer);
     }
 }

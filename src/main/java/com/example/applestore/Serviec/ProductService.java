@@ -78,7 +78,7 @@ public class ProductService {
         product.setQuantity(product.getQuantity()-1);
         details.setBalance(details.getBalance()-product.getPrice());
         productRepository.save(product);
-        authRepository.save(customer);
+        detailsRepository.save(details);
         if (product.getQuantity() == 0){
             product.setIsAvailable(false);
             productRepository.save(product);

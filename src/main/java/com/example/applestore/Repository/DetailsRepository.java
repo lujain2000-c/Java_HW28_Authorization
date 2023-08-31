@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface DetailsRepository extends JpaRepository<Details,Integer> {
 
     Details findDetailsById(Integer id);
-    Details findDetailsByCustomer(Customer customer);
+    //Details findDetailsByCustomer(Customer customer);
 }

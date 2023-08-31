@@ -31,7 +31,7 @@ public class Customer implements UserDetails {
 
     @NotEmpty(message = "password should be not empty")
     //@Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$")
-    @Column(columnDefinition = "varchar(20) not null ")
+    @Column(columnDefinition = "varchar(255) not null ")
     private String password;
     private String role;
 
